@@ -1,38 +1,150 @@
-.App {
+.center-text {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.jumbo {
+  font-size: 46px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content {
+  margin: 20px auto 75px auto;
+  max-width: 80%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.image-container {
+  margin: auto;
+  max-width: 60%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.sunset {
+  max-width: 60%;
+  border-radius: 50%;
+  border: 8px solid black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.shadow-container {
+  margin: -100px auto 150px auto;
+  width: 60%; /* Adjust width as needed */
+  height: 100px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0px 120px 25px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-circle {
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  width: 60%;
+  height: 0;
+  padding-bottom: 25%; /* 1:1 aspect ratio (square) */
+  /* padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  /* padding-bottom: 75%; /* 4:3 aspect ratio */
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px;
+  font-size: 46px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.regular-text {
+  font-family: "Aptos", sans-serif;
+  font-size: 28px;
+}
+
+.portrait {
+  display: block;
+  margin: auto;
+  width: 30%;
+  height: auto;
+}
+
+.float-left {
+  float: left;
+  margin-right: 20px;
+  max-width: 50%;
+}
+
+.verified {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 185px;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .small-hide {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .jumbo {
+    font-size: 34px;
+  }
+
+  .regular-text {
+    font-size: 20px;
+  }
+
+  .content {
+    max-width: 97%;
+    margin: 60px auto 20px auto;
+  }
+
+  .image-container {
+    max-width: 98%;
+    margin: auto;
+  }
+
+  .portrait {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .sunset {
+    max-width: 80%;
+    border: 5px solid black;
+  }
+
+  .shadow-container {
+    width: 80%;
+  }
+
+  .hamburger {
+    margin: auto;
+    max-width: 90%;
+    padding: 5px;
+    margin: 0 auto 75px auto;
+  }
+
+  .hamburger-button {
+    font-size: 38px;
+  }
+
+  .navbar {
+    display: none;
+    font-size: 34px;
+    padding: 5px;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .open {
+    display: flex;
+    flex-direction: column;
   }
 }

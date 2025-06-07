@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import About from './components/pages/About';
+import Services from './components/pages/Services';
+import Insurances from './components/pages/Insurances';
+import Contact from './components/pages/Contact';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <Router>
+      <ScrollToTop />
+      <div className='verified'>
+        <a href="https://www.psychologytoday.com/profile/1270828" target="_blank" rel="noopener noreferrer">
+          <img src={require('./images/verified.png')} alt='Verified by Psychology Today' />
         </a>
-      </header>
-    </div>
+      </div>
+      <div className='content'>
+
+        <Routes>
+          <Route index element={<Home />} />
+          <Route exact path='/about' element={<About />} />
+          <Route exact path='/services' element={<Services />} />
+          <Route exact path='/insurances' element={<Insurances />} />
+          <Route exact path='/contact' element={<Contact />} />
+          <Route path='*' element={<Home />} />
+        </Routes>
+      </div>
+      <Navbar />
+    </Router>
+
   );
 }
 
