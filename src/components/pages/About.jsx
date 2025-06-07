@@ -7,12 +7,12 @@ const About = () => {
           <br />
           <br />
           <img
-            src={require("../../images/sunset.png")}
+            src={require("../../images/sunset.webp")}
             alt="sunset"
-            className="sunset"
+            className="sunset-about"
           />
           <br />
-          <div className="shadow-container"></div>
+          <div className="shadow-container-about"></div>
         </div>
       </div>
       <div className="jumbo center-text">
@@ -22,7 +22,7 @@ const About = () => {
         <br />A Place of Comfort and Safety
       </div>
       <img
-        src={require("../../images/paula.jpg")}
+        src={require("../../images/paula.webp")}
         alt="sunset"
         className="portrait"
       />

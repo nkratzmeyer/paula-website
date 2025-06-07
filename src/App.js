@@ -21,10 +21,10 @@ function App() {
 
         <Routes>
           <Route index element={<Home />} />
-          <Route exact path='/about' element={<About />} />
-          <Route exact path='/services' element={<Services />} />
-          <Route exact path='/insurances' element={<Insurances />} />
-          <Route exact path='/contact' element={<Contact />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/insurances' element={<Insurances />} />
+          <Route path='/contact' element={<Contact />} />
           <Route path='*' element={<Home />} />
         </Routes>
       </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -26,7 +25,11 @@ const Navbar = () => {
           Contact Me
         </Link>
       </div>
-      <button className="hamburger-button" onClick={toggleMenu}>
+      <button
+        className="hamburger-button"
+        onClick={toggleMenu}
+        aria-label="Toggle navigation menu"
+      >
         ☰
       </button>
     </nav>

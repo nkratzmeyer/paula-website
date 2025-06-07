@@ -1,5 +1,3 @@
-import React from "react";
-
 const Home = () => {
   return (
     <>
@@ -11,7 +9,7 @@ const Home = () => {
       </div>
       <div className="image-container">
         <img
-          src={require("../images/sunset.png")}
+          src={require("../images/sunset.webp")}
           alt="sunset"
           className="sunset"
         />
