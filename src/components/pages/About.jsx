@@ -15,12 +15,6 @@ const About = () => {
           <div className="shadow-container-about"></div>
         </div>
       </div>
-      <div className="jumbo center-text">
-        Paula Thomas, LCSW
-        <br />
-        Therapist in Southern California
-        <br />A Place of Comfort and Safety
-      </div>
       <img
         src={require("../../images/paula.webp")}
         alt="sunset"
@@ -56,17 +50,6 @@ const About = () => {
           services to most adults in need of support. I provide virtual therapy
           from the comfort of your own home.
         </p>
-        <div className="center-text bold">
-          Call or Email Today
-          <br />
-          (760) 212-1443 (return call within 1 business day)
-          <br />
-          paula.thomastherapy@gmail.com (return email within 1 business day)
-          <br />
-          Many insurances accepted
-          <br />
-          Private Pay accepted
-        </div>
       </div>
     </>
   );

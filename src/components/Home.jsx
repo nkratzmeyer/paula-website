@@ -7,6 +7,7 @@ const Home = () => {
         Therapist in Southern California
         <br />A Place of Comfort and Safety
       </div>
+
       <div className="image-container">
         <img
           src={require("../images/sunset.webp")}

@@ -12,13 +12,9 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className='verified'>
-        <a href="https://www.psychologytoday.com/profile/1270828" target="_blank" rel="noopener noreferrer">
-          <img src={require('./images/verified.png')} alt='Verified by Psychology Today' />
-        </a>
-      </div>
       <div className='content'>
 
+        <Navbar />
         <Routes>
           <Route index element={<Home />} />
           <Route path='/about' element={<About />} />
@@ -28,7 +24,6 @@ function App() {
           <Route path='*' element={<Home />} />
         </Routes>
       </div>
-      <Navbar />
     </Router>
 
   );
