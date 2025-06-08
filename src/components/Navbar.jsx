@@ -28,18 +28,17 @@ const Navbar = () => {
         <Link to="/contact" onClick={toggleMenu}>
           Contact Me
         </Link>
-        <div className="verified">
-          <a
-            href="https://www.psychologytoday.com/profile/1270828"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={require("./../images/verified.png")}
-              alt="Verified by Psychology Today"
-            />
-          </a>
-        </div>
+        <a
+          href="https://www.psychologytoday.com/profile/1270828"
+          target="_blank"
+          className="verified"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={require("./../images/verified.png")}
+            alt="Verified by Psychology Today"
+          />
+        </a>
       </div>
     </nav>
   );

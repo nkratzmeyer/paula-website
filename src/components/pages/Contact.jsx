@@ -4,23 +4,23 @@ const Contact = () => {
 
   return (
     <div className="center-text">
-      <div className="jumbo center-text"> Call or Email Today</div>
-      <div className="center-text bold contact-info">
-        <br />
-        (760) 212-1443
-        <br />
-        (return call within 1 business day)
-        <br />
-        <br />
-        <br />
-        <a
-          href="mailto:paula.thomastherapy@gmail.com"
-          className="contact-email"
-        >
-          paula.thomastherapy@gmail.com
-        </a>
-        <br />
-        (return email within 1 business day)
+      <h1 className="center-text regular-text"> Call or Email Today</h1>
+
+      <div className="contact-card">
+        <div className="contact-item">
+          <div className="label">Phone</div>
+          <div className="value">(760) 212-1443</div>
+          <div className="note">Return call within 1 business day</div>
+        </div>
+        <div className="contact-item">
+          <div className="label">Email</div>
+          <div className="value">
+            <a href="mailto:paula.thomastherapy@gmail.com">
+              paula.thomastherapy@gmail.com
+            </a>
+          </div>
+          <div className="note">Return email within 1 business day</div>
+        </div>
       </div>
     </div>
   );

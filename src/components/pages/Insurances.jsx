@@ -1,10 +1,9 @@
 const Insurances = () => {
   return (
     <>
-      <h1 className="jumbo center-text">Insurances Accepted</h1>;
-      <div className="regular-text">
-        <h3>I accept the following insurances:</h3>
-        <ul className="bold">
+      <div class="insurance-card">
+        <h2>Accepted Insurances</h2>
+        <ul class="insurance-list">
           <li>Blue Shield of California</li>
           <li>TriWest/Tricare</li>
           <li>Aetna</li>
@@ -14,8 +13,9 @@ const Insurances = () => {
           <li>Medicare</li>
           <li>Carelon</li>
         </ul>
-        <h3>Working on credentialing with</h3>
-        <ul className="bold">
+
+        <h3>Credentialing In Progress</h3>
+        <ul class="credentialing-list">
           <li>IEHP</li>
           <li>CHG</li>
         </ul>

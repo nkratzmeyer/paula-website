@@ -3,23 +3,14 @@ const About = () => {
   return (
     <>
       <div className="float-left small-hide">
-        <div className="center-flex-col">
-          <br />
-          <br />
-          <img
-            src={require("../../images/sunset.webp")}
-            alt="sunset"
-            className="sunset-about"
-          />
-          <br />
-          <div className="shadow-container-about"></div>
-        </div>
+        <img
+          src={require("../../images/paula.png")}
+          alt="Paula Thomas, LCSW"
+          className="portrait"
+        />
+        <h1 className="center-text regular-text">Paula Thomas, LCSW</h1>
       </div>
-      <img
-        src={require("../../images/paula.webp")}
-        alt="sunset"
-        className="portrait"
-      />
+
       <div className="regular-text center-text">
         <p>
           Do you struggle with anxiety, depression, grief, chronic pain, or
