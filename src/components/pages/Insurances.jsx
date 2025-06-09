@@ -1,9 +1,9 @@
 const Insurances = () => {
   return (
     <>
-      <div class="insurance-card">
+      <div className="insurance-card">
         <h2>Accepted Insurances</h2>
-        <ul class="insurance-list">
+        <ul className="insurance-list">
           <li>Blue Shield of California</li>
           <li>TriWest/Tricare</li>
           <li>Aetna</li>
@@ -15,7 +15,7 @@ const Insurances = () => {
         </ul>
 
         <h3>Credentialing In Progress</h3>
-        <ul class="credentialing-list">
+        <ul className="credentialing-list">
           <li>IEHP</li>
           <li>CHG</li>
         </ul>

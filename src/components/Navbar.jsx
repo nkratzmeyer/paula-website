@@ -1,47 +1,50 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./../Menu.css";
 
-const Navbar = () => {
+export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+
   return (
-    <nav className="navbar-container">
-      <button
-        className="hamburger-button"
-        onClick={toggleMenu}
-        aria-label="Toggle navigation menu"
-      >
-        ☰
-      </button>
-      <div className={`navbar${isOpen ? " open" : ""}`}>
-        <Link to="/" onClick={toggleMenu}>
-          Home
-        </Link>
-        <Link to="/about" onClick={toggleMenu}>
-          About
-        </Link>
-        <Link to="/insurances" onClick={toggleMenu}>
-          Insurances Accepted
-        </Link>
-        <Link to="/contact" onClick={toggleMenu}>
-          Contact Me
-        </Link>
-        <a
-          href="https://www.psychologytoday.com/profile/1270828"
-          target="_blank"
-          className="verified"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={require("./../images/verified.png")}
-            alt="Verified by Psychology Today"
-          />
-        </a>
+    <nav className="menu">
+      <div className="menu-container">
+        <div className="menu-logo">
+          <Link to="/">Paula Thomas Therapy</Link>
+        </div>
+        <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
+          ☰
+        </button>
+        <ul className={`menu-items ${isOpen ? "open" : ""}`}>
+          <li>
+            <Link to="/" onClick={() => setIsOpen(false)}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" onClick={() => setIsOpen(false)}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/insurances" onClick={() => setIsOpen(false)}>
+              Insurances Accepted
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" onClick={() => setIsOpen(false)}>
+              Contact
+            </Link>
+          </li>
+          <li className="menu-image-link">
+            <Link to="/" onClick={() => setIsOpen(false)}>
+              <img
+                src={require("./../images/verified.png")}
+                alt="Verified by Psychology Today"
+              />
+            </Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );
-};
-
-export default Navbar;
+}

@@ -3,12 +3,15 @@
 }
 
 .jumbo {
-  font-size: 50px;
+  font-size: 44px;
 }
 
 .content {
   margin: auto;
   max-width: 80%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 0 24px 24px 24px;
+  min-height: 100vh;
 }
 
 .contact-card {
@@ -52,7 +55,7 @@
 .insurance-card {
   max-width: 500px;
   margin: 30px auto;
-  padding: 28px 32px;
+  padding: 6px 32px;
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
@@ -115,12 +118,6 @@
   border: 8px solid black;
 }
 
-.sunset-about {
-  max-width: 60%;
-  border-radius: 50%;
-  border: 8px solid black;
-}
-
 .shadow-container {
   margin: -100px auto 150px auto;
   width: 50%; /* Adjust width as needed */
@@ -128,49 +125,6 @@
   background-color: transparent;
   border-radius: 50%;
   box-shadow: 0px 120px 25px rgba(0, 0, 0, 0.3);
-}
-
-.shadow-container-about {
-  margin: -100px auto 150px auto;
-  width: 60%; /* Adjust width as needed */
-  height: 100px;
-  background-color: transparent;
-  border-radius: 50%;
-  box-shadow: 0px 120px 25px rgba(0, 0, 0, 0.3);
-}
-
-.navbar {
-  width: 100%;
-  background-color: rgb(240, 240, 240);
-  font-size: 52px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.navbar a {
-  text-decoration: none;
-}
-
-.navbar .verified {
-  height: 100%;
-}
-
-a {
-  display: inline-block;
-}
-
-.navbar > * {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-
-.contact-email {
-  color: #ffaf38;
-  text-decoration: none;
-  font-weight: bold;
 }
 
 .regular-text {
@@ -181,15 +135,6 @@ a {
 p {
   text-align: left;
 }
-
-/* .portrait {
-  display: block;
-  margin: 30px auto 60px auto;
-  width: 40%;
-  height: auto;
-  border: 6px solid rgb(153, 153, 153);
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
-} */
 
 .portrait {
   width: 50%;
@@ -208,33 +153,9 @@ p {
   max-width: 50%;
 }
 
-.verified {
-  width: 185px;
-}
-
-/* Hamburger menu styles */
-.navbar-container {
-  width: 100%;
-  position: relative;
-  margin-bottom: 15px;
-}
-
-.hamburger-button {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 38px;
-  cursor: pointer;
-  z-index: 1001;
-}
-
 @media screen and (max-width: 768px) {
-  .small-hide {
-    display: none;
-  }
-
   .jumbo {
-    font-size: 54px;
+    font-size: 32px;
   }
 
   .regular-text {
@@ -242,8 +163,9 @@ p {
   }
 
   .content {
-    max-width: 97%;
-    margin: 60px auto 20px auto;
+    max-width: 100%;
+    margin: auto;
+    padding: 0px 8px;
   }
 
   .image-container {
@@ -267,43 +189,25 @@ p {
     width: 80%;
   }
 
-  .hamburger-button {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 10px;
+  .contact-card {
+    max-width: 100%;
   }
-  .navbar {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100vw;
-    background-color: #d6d6d6;
-    z-index: 1000;
-    font-size: 34px;
-    padding: 20px 0 10px 0;
-    align-items: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  .navbar.open {
-    display: flex;
-  }
-}
 
-@media screen and (min-width: 769px) {
-  .navbar {
-    display: flex !important;
-    flex-direction: row;
-    position: static;
-    font-size: 52px;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: none;
+  .label {
+    font-size: 1.5rem;
   }
-  .hamburger-button {
-    display: none;
+
+  .value {
+    font-size: 1rem;
+  }
+
+  .note {
+    font-size: 1rem;
+  }
+
+  .float-left {
+    float: none;
+    max-width: 50%;
+    margin: auto;
   }
 }

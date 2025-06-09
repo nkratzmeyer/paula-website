@@ -1,0 +1,85 @@
+.menu {
+  background-color: #ebebeb;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 24px;
+  font-family: "Segoe UI", sans-serif;
+  margin-bottom: 20px;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2a3f54;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem; /* slightly larger */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-items li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.25rem; /* was 1rem */
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.menu-items li a:hover {
+  color: #0077cc;
+}
+
+.menu-image-link img {
+  width: 185px;
+  height: auto;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .menu-items.open {
+    display: flex;
+  }
+
+  .menu-items li {
+    margin-bottom: 5px;
+  }
+
+  .menu-items li a {
+    font-size: 1rem; /* bigger for mobile */
+  }
+
+  .menu-logo a {
+    font-size: 1rem;
+  }
+}

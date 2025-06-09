@@ -2,7 +2,7 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className="float-left small-hide">
+      <div className="float-left">
         <img
           src={require("../../images/paula.png")}
           alt="Paula Thomas, LCSW"
